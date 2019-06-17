@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CContactPage = () => {
+const ContactPage = () => {
   return (
     <div>
       <h1>Contact Page</h1>
