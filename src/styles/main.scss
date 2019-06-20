@@ -1,0 +1,23 @@
+// Abstracts
+@import "abstracts/reset";
+@import "abstracts/fonts";
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/typography";
+
+// Components
+@import "components/layout";
+@import "components/header";
+@import "components/footer";
+@import "components/buttons";
+
+// Pages
+@import "pages/index";
+@import "pages/blog";
+@import "pages/legal";
+@import "pages/contact";
+@import "pages/faq";
+
+
+// Vendor Styles
+// @import "~slick-carousel/slick/slick";

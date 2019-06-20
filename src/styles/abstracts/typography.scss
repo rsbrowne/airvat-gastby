@@ -1,0 +1,93 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  @media #{$breakpoint-medium-large} {
+    font-size: 60%;
+  }
+
+  @media #{$breakpoint-medium} {
+    font-size: 57.5%;
+  }
+
+  @media #{$breakpoint-small-medium} {
+    font-size: 55%; /* 1rem = 8.8px */
+  }
+
+  @media #{$breakpoint-small} {
+    font-size: 50%; /* 1rem = 8px */
+  }
+}
+
+h1 {
+  font-family: $font-family-heading;
+  font-size: 6rem;
+  font-weight: $font-weight-semi-bold;
+  line-height: 1.23;
+  color: $color-dark;
+  letter-spacing: -0.6px;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    font-size: 6.2rem;
+  }
+}
+
+h2 {
+  font-family: $font-family-heading;
+  font-size: 3rem;
+  font-weight: $font-weight-semi-bold;
+  line-height: 1.23;
+  color: $color-text;
+  letter-spacing: -0.6px;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    font-size: 3.2rem;
+    font-weight: $font-weight-regular;
+  }
+
+  &.gradient-bg {
+    background: linear-gradient(90deg, $color-gradient-primary 0%, $color-gradient-secondary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      background: transparent;
+      color: $color-gradient-primary;
+    }
+  }
+}
+
+h3 {
+  font-family: $font-family-heading;
+  font-size: 2.2rem;
+  font-weight: $font-weight-semi-bold;
+  line-height: 1.27;
+  color: $color-text;
+  letter-spacing: -0.6px;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    font-size: 2.4rem;
+    font-weight: $font-weight-regular;
+  }
+}
+
+p {
+  font-family: $font-family-heading;
+  font-size: 1.7rem;
+  font-weight: $font-weight-light;
+  line-height: 1.27;
+  color: $color-text;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    font-size: 1.8rem;
+  }
+
+  &.large {
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: -0.1px;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-size: 2.2rem;
+    }
+  }
+}

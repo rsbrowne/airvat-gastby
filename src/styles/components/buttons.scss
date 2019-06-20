@@ -1,0 +1,42 @@
+.button {
+  background: $color-primary;
+  color: $color-light;
+  font-family: $font-family-heading;
+  font-size: 2.4rem;
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+  text-decoration: none;
+  padding: 2rem 6rem;
+  border-radius: 4rem;
+  display: inline-block;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    font-size: 2.6rem;
+  }
+
+  &:hover {
+    background: $color-primary-dark;
+  }
+}
+
+.button--small {
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    font-size: 2rem;
+  }
+
+  @media #{$breakpoint-medium-small} {
+    font-size: 3rem;
+  }
+}
+
+.button--negative {
+  background-color: white;
+  color: $color-primary;
+
+  &:hover {
+    background-color: $color-light-dark;
+  }
+}
