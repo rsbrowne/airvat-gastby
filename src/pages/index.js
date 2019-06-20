@@ -3,6 +3,9 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
+import bannerPhones from '../images/banner-phones.svg'
+import bannerPhonesMobile from '../images/banner-phones-mobile.png'
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -13,8 +16,8 @@ const IndexPage = () => {
             <Link to="#" className="button">Get the App</Link>
           </div>
           <div className="section__half section__half--right">
-            <img className="image--desktop" src="../images/banner-phones.svg" alt="Airvat Phone Demo" />
-            <img className="image--mobile" src="../images/banner-phones-mobile.png" alt="Airvat Phone Demo" />
+            <img className="image--desktop" src={bannerPhones} alt="Airvat Phone Demo" />
+            <img className="image--mobile" src={bannerPhonesMobile} alt="Airvat Phone Demo" />
           </div>
         </div>
       </div>
