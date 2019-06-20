@@ -118,7 +118,7 @@
 
   &:before {
     content: "";
-    background: url("/images/css_sprites.png") -112px -104px;
+    background: url("../images/css_sprites.png") -112px -104px;
     width: 30px;
     height: 20px;
     position: absolute;
@@ -129,7 +129,7 @@
 
   &:after {
     content: "";
-    background: url("/images/css_sprites.png") -83px -146px;
+    background: url("../images/css_sprites.png") -83px -146px;
     width: 13px;
     height: 8px;
     position: absolute;
@@ -161,7 +161,7 @@
 
   &:after {
     content: "";
-    background: url("/images/css_sprites.png") -50px -146px;
+    background: url("../images/css_sprites.png") -50px -146px;
     width: 13px;
     height: 8px;
     position: absolute;

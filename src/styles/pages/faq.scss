@@ -53,14 +53,14 @@
     top: 50%;
     transform: translateY(-50%);
     content: "";
-    background: url("/images/css_sprites.png") -171px -10px;
+    background: url("../images/css_sprites.png") -171px -10px;
     width: 30px;
     height: 17px;
   }
 
   &.active {
     &:after {
-      background: url("/images/css_sprites.png") -171px -47px;
+      background: url("../images/css_sprites.png") -171px -47px;
     }
   }
 }

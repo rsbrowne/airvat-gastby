@@ -8,14 +8,14 @@ const Header = () => {
       <div className="header">
         <div className="header__logo">
           <Link to="/">
-            <img src="./images/airvat-logo.svg" alt="AirVAT" />
+            <img src=".../images/airvat-logo.svg" alt="AirVAT" />
           </Link>
         </div>
         <div className="js-menu-button menu-button">
-          <img src="/images/mobile-bar.svg" alt="Open" />
+          <img src="../images/mobile-bar.svg" alt="Open" />
         </div>
         <div className="header__nav">
-          <img className="header__close js-header__close" src="/images/mobile-close.svg" alt="Close" />
+          <img className="header__close js-header__close" src="../images/mobile-close.svg" alt="Close" />
           <ul className="nav">
             <li>
               <a href="#" className="nav__item nav__item--dropdown">UK</a>
