@@ -9,13 +9,38 @@ import formPhoneMobile from '../images/form-mobile.png'
 import refundPhone from '../images/phone-refund.png'
 import refundPhoneMobile from '../images/refund-mobile.png'
 
+
+const handleClick = (e) => {
+  const features = document.querySelectorAll('.js-feature');
+  const featureImg = document.querySelectorAll('.features--right img');
+  const clickedFeature = e.currentTarget;
+
+  if (!clickedFeature.classList.contains('active')) {
+    const clickedFeatureAttr = clickedFeature.getAttribute('data-feature');
+
+    features.forEach(feature => {
+      feature.classList.remove('active');
+    });
+
+    clickedFeature.classList.add('active');
+
+    featureImg.forEach(featureImg => {
+      if (featureImg.getAttribute('data-feature') === clickedFeatureAttr) {
+        featureImg.classList.add('active');
+      } else {
+        featureImg.classList.remove('active');
+      }
+    });
+  }
+}
+
 const FeatureViewer = () => {
   return (
     <React.Fragment>
       <div className="section__half features--left">
         <div className="features__content">
           <h2 className="gradient-bg">It's never been this Easy !</h2>
-          <div className="feature js-feature active" data-feature="receipts">
+          <div className="feature js-feature active" data-feature="receipts" onClick={handleClick}>
             <div className="feature__image">
               <img src={receiptsPhoneMobile} alt="recipts" />
             </div>
@@ -24,7 +49,7 @@ const FeatureViewer = () => {
               <p className="large">Take pictures of all your shop receipts. We will process them for you into a single tax free form.</p>
             </div>
           </div>
-          <div className="feature js-feature" data-feature="tax">
+          <div className="feature js-feature" data-feature="tax" onClick={handleClick}>
             <div className="feature__image">
               <img src={taxPhoneMobile} alt="tax" />
             </div>
@@ -33,7 +58,7 @@ const FeatureViewer = () => {
               <p className="large">Finished shopping and ready to fly home? Print your tax free form before going to the airport!</p>
             </div>
           </div>
-          <div className="feature js-feature" data-feature="form">
+          <div className="feature js-feature" data-feature="form" onClick={handleClick}>
             <div className="feature__image">
               <img src={formPhoneMobile} alt="form" />
             </div>
@@ -42,7 +67,7 @@ const FeatureViewer = () => {
               <p className="large">Follow the instructions within the app on how to get your form authorised by Customs at the airport.</p>
             </div>
           </div>
-          <div className="feature js-feature" data-feature="refund">
+          <div className="feature js-feature" data-feature="refund" onClick={handleClick}>
             <div className="feature__image">
               <img src={refundPhoneMobile} alt="refund" />
             </div>
