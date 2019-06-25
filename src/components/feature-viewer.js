@@ -9,32 +9,32 @@ import formPhoneMobile from '../images/form-mobile.png'
 import refundPhone from '../images/phone-refund.png'
 import refundPhoneMobile from '../images/refund-mobile.png'
 
-
-const handleClick = (e) => {
-  const features = document.querySelectorAll('.js-feature');
-  const featureImg = document.querySelectorAll('.features--right img');
-  const clickedFeature = e.currentTarget;
-
-  if (!clickedFeature.classList.contains('active')) {
-    const clickedFeatureAttr = clickedFeature.getAttribute('data-feature');
-
-    features.forEach(feature => {
-      feature.classList.remove('active');
-    });
-
-    clickedFeature.classList.add('active');
-
-    featureImg.forEach(featureImg => {
-      if (featureImg.getAttribute('data-feature') === clickedFeatureAttr) {
-        featureImg.classList.add('active');
-      } else {
-        featureImg.classList.remove('active');
-      }
-    });
-  }
-}
-
 const FeatureViewer = () => {
+
+  const handleClick = (e) => {
+    const features = document.querySelectorAll('.js-feature');
+    const featureImg = document.querySelectorAll('.features--right img');
+    const clickedFeature = e.currentTarget;
+  
+    if (!clickedFeature.classList.contains('active')) {
+      const clickedFeatureAttr = clickedFeature.getAttribute('data-feature');
+  
+      features.forEach(feature => {
+        feature.classList.remove('active');
+      });
+  
+      clickedFeature.classList.add('active');
+  
+      featureImg.forEach(featureImg => {
+        if (featureImg.getAttribute('data-feature') === clickedFeatureAttr) {
+          featureImg.classList.add('active');
+        } else {
+          featureImg.classList.remove('active');
+        }
+      });
+    }
+  }
+  
   return (
     <React.Fragment>
       <div className="section__half features--left">
