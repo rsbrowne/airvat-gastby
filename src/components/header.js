@@ -5,6 +5,21 @@ import logo from '../images/airvat-logo.svg'
 import mobileBar from '../images/mobile-bar.svg'
 import mobileClose from '../images/mobile-close.svg'
 
+
+const openMenu = (e) => {
+  const mobileMenu = document.querySelector('.header__nav');
+  if (!mobileMenu.classList.contains('active')) {
+    mobileMenu.classList.add('active');
+  }
+}
+
+const closeMenu = (e) => {
+  const mobileMenu = document.querySelector('.header__nav');
+  if (mobileMenu.classList.contains('active')) {
+    mobileMenu.classList.remove('active');
+  }
+}
+
 const Header = () => {
   return (
     <header>
@@ -15,11 +30,11 @@ const Header = () => {
             <img src={logo} alt="AirVAT" />
           </Link>
         </div>
-        <div className="js-menu-button menu-button">
+        <div className="js-menu-button menu-button" onClick={openMenu}>
           <img src={mobileBar} alt="Open" />
         </div>
         <div className="header__nav">
-          <img className="header__close js-header__close" src={mobileClose} alt="Close" />
+          <img className="header__close js-header__close" src={mobileClose} alt="Close" onClick={closeMenu} />
           <ul className="nav">
             <li>
               <Link to="#" className="nav__item nav__item--dropdown">UK</Link>
