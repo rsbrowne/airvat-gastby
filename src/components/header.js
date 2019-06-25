@@ -5,22 +5,27 @@ import logo from '../images/airvat-logo.svg'
 import mobileBar from '../images/mobile-bar.svg'
 import mobileClose from '../images/mobile-close.svg'
 
-
-const openMenu = (e) => {
-  const mobileMenu = document.querySelector('.header__nav');
-  if (!mobileMenu.classList.contains('active')) {
-    mobileMenu.classList.add('active');
-  }
-}
-
-const closeMenu = (e) => {
-  const mobileMenu = document.querySelector('.header__nav');
-  if (mobileMenu.classList.contains('active')) {
-    mobileMenu.classList.remove('active');
-  }
-}
-
 const Header = () => {
+  const mobileNav = React.createRef();
+  const bodySelector = document.body;
+  const htmlSelector = document.documentElement;
+
+  const openMenu = (e) => {
+    if (!mobileNav.current.classList.contains('active')) {
+      mobileNav.current.classList.add('active');
+      bodySelector.classList.add('no-scroll');
+      htmlSelector.classList.add('no-scroll');
+    }
+  }
+
+  const closeMenu = (e) => {
+    if (mobileNav.current.classList.contains('active')) {
+      mobileNav.current.classList.remove('active');
+      bodySelector.classList.remove('no-scroll');
+      htmlSelector.classList.remove('no-scroll');
+    }
+  }
+
   return (
     <header>
       <div className="se-pre-con"></div>
@@ -33,7 +38,7 @@ const Header = () => {
         <div className="js-menu-button menu-button" onClick={openMenu}>
           <img src={mobileBar} alt="Open" />
         </div>
-        <div className="header__nav">
+        <div className="header__nav" ref={mobileNav}>
           <img className="header__close js-header__close" src={mobileClose} alt="Close" onClick={closeMenu} />
           <ul className="nav">
             <li>
