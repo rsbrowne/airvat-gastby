@@ -10,7 +10,7 @@ const Header = () => {
   const bodySelector = document.body;
   const htmlSelector = document.documentElement;
 
-  const openMenu = (e) => {
+  const openMenu = () => {
     if (!mobileNav.current.classList.contains('active')) {
       mobileNav.current.classList.add('active');
       bodySelector.classList.add('no-scroll');
@@ -18,7 +18,7 @@ const Header = () => {
     }
   }
 
-  const closeMenu = (e) => {
+  const closeMenu = () => {
     if (mobileNav.current.classList.contains('active')) {
       mobileNav.current.classList.remove('active');
       bodySelector.classList.remove('no-scroll');
