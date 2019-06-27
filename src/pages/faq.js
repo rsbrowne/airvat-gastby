@@ -3,13 +3,28 @@ import React from 'react'
 import Layout from '../components/layout'
 
 const FaqPage = () => {
+
+  const handleClick = (e) => {
+    const clickedQuestion = e.currentTarget;
+    const parentNode = e.currentTarget.parentElement;
+    const relatedAnswer = parentNode.querySelector('.answer');
+    
+    if (clickedQuestion.classList.contains('active')) {
+      clickedQuestion.classList.remove('active');
+      relatedAnswer.classList.remove('active');
+    } else {
+      clickedQuestion.classList.add('active');
+      relatedAnswer.classList.add('active');
+    }
+  }
+
   return (
     <Layout>
       <div className="section section--banner section--faq">
         <div className="section__inner section__inner--faq">
           <h1>How can we help you?</h1>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 How to shop tax free with AIRVAT?
               </h3>
@@ -26,7 +41,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 Who can shop tax free?
               </h3>
@@ -40,7 +55,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 What purchases qualify for tax refund?
               </h3>
@@ -54,7 +69,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 What purchases DON’T qualify for tax refund?
               </h3>
@@ -66,7 +81,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 Is my tax refund guaranteed?
               </h3>
@@ -78,7 +93,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 Purchasing goods over £250?
               </h3>
@@ -95,7 +110,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 I already received a tax free form instore
               </h3>
@@ -107,7 +122,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 Customs inspection
               </h3>
@@ -119,7 +134,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 A shop emailed me an e-receipt
               </h3>
@@ -131,7 +146,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 I am visiting another EU country before flying home 
               </h3>
@@ -147,7 +162,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 I have a connecting flight before leaving the EU
               </h3>
@@ -159,7 +174,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 In which countries can I use AIRVAT?
               </h3>
@@ -171,7 +186,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 Does AIRVAT charge fees?
               </h3>
@@ -183,7 +198,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 When will I receive my refund?
               </h3>
@@ -195,7 +210,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 Where can I print my tax free form?
               </h3>
@@ -205,7 +220,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 What is VAT?
               </h3>
@@ -217,7 +232,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="accordion js-accordion">
-            <div className="question">
+            <div className="question" onClick={handleClick}>
               <h3>
                 Any other questions?
               </h3>
