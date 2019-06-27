@@ -5,10 +5,10 @@ import Layout from '../components/layout'
 const LegalPage = () => {
   return (
     <Layout>
-      <div class="section section--banner">
-        <div class="section__inner section__inner--legal">
+      <div className="section section--banner">
+        <div className="section__inner section__inner--legal">
           <h1>Legal Agreements</h1>
-          <div class="legal-agreement">
+          <div className="legal-agreement">
             <h2>Terms of Website Use, Privacy and Cookies Policies</h2>
             
             <p>These terms of use (together with the documents referred to in it) tell you the terms of use on which you may make use of our website AIRVAT.com (our site). Please read these terms of use carefully before you start to use our site, as these will apply to your use of our site. We recommend that you print a copy of this for future reference. By using our site, you confirm that you accept these terms of use and that you agree to comply with them. If you do not agree to these terms of use, you must not use our site.</p>

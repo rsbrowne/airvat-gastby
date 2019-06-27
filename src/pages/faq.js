@@ -5,16 +5,16 @@ import Layout from '../components/layout'
 const FaqPage = () => {
   return (
     <Layout>
-      <div class="section section--banner section--faq">
-        <div class="section__inner section__inner--faq">
+      <div className="section section--banner section--faq">
+        <div className="section__inner section__inner--faq">
           <h1>How can we help you?</h1>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 How to shop tax free with AIRVAT?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <ul>
                 <li>Shop in any UK physical store with cash or card;</li>
                 <li>Take pictures of your purchase receipts within the app with your phone camera;</li>
@@ -25,13 +25,13 @@ const FaqPage = () => {
               </ul>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 Who can shop tax free?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <ul>
                 <li>Non-EU residents;</li>
                 <li>EU residents living outside the EU for 12 months or more (note: you will need to provide proof of residency e.g. visa or residence permit);</li>
@@ -39,13 +39,13 @@ const FaqPage = () => {
               </ul>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 What purchases qualify for tax refund?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <ul>
                 <li>Goods purchased in physical retail stores only;</li>
                 <li>Purchases must be for personal use and taken back to your home country in your luggage within 3 months of buying;</li>
@@ -53,37 +53,37 @@ const FaqPage = () => {
               </ul>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 What purchases DON’T qualify for tax refund?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 Online shopping or services (e.g. taxies, concert tickets, hotel bills, or restaurant meals) do not qualify for tax refund.
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 Is my tax refund guaranteed?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 Yes, provided you get your tax free form stamped by Customs before leaving the EU. Select your departure airport within the app to get instructions on where to go.
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 Purchasing goods over £250?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 Ask the shop assistant to issue a business VAT invoice addressed: <br />
                 <strong>AIRVAT ltd <br />
@@ -94,49 +94,49 @@ const FaqPage = () => {
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 I already received a tax free form instore
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 Return the tax free form back to the shop and replace it with a standard till receipt so that you can get your tax refund with AIRVAT. 
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 Customs inspection
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 Customs may inspect your shopping, especially high value items such as electronics, jewelry, and watches. Therefore your shopping must be unused and in it original packaging to ensure you get your tax free form stamped.
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 A shop emailed me an e-receipt
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 Forward us your e-receipts to info@airvat.com.
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 I am visiting another EU country before flying home 
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 If the UK is not your last departure point from the EU, get Customs authorisation at your final EU departure airport and post the original stamped form to us: <br />
                 <strong>AIRVAT ltd <br />
@@ -146,83 +146,83 @@ const FaqPage = () => {
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 I have a connecting flight before leaving the EU
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 UK Customs will stamp your tax free form if your connecting flight leaves the EU within 24 hours after you left the UK.
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 In which countries can I use AIRVAT?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 On purchases made in the UK only, but you can arrive in and depart from any other EU countries during your visit to the EU.
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 Does AIRVAT charge fees?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 Yes. Your tax free form will state the exact amount of admin fees charged. We will always charge you less than when getting your refund from the shop where you bought the goods.
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 When will I receive my refund?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 Usually 2-6 weeks after your departure depending on your airport.
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 Where can I print my tax free form?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>Ask at your hotel reception, find an internet cafe, or go to the nearest Ryman stationery shop.</p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 What is VAT?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 VAT is a sales tax already included in the price of your purchase. This tax is charged by the UK Government at 20% of the net and 16.67% of the gross goods value. Non-EU residents are entitled to claim their tax on goods they take home from the EU at the end of their visit. See full details on the UK government website <a href="https://www.gov.uk/guidance/claim-vat-back-on-tax-free-shopping-in-the-uk-notice-7041">https://www.gov.uk/guidance/claim-vat-back-on-tax-free-shopping-in-the-uk-notice-7041</a>
               </p>
             </div>
           </div>
-          <div class="accordion js-accordion">
-            <div class="question">
+          <div className="accordion js-accordion">
+            <div className="question">
               <h3>
                 Any other questions?
               </h3>
             </div>
-            <div class="answer">
+            <div className="answer">
               <p>
                 Email us on info@airvat.com.
               </p>
