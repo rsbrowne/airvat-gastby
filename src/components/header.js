@@ -7,6 +7,7 @@ import mobileClose from '../images/mobile-close.svg'
 
 const Header = () => {
   const mobileNav = React.createRef();
+  const dropdownNav = React.createRef();
   const bodySelector = document.body;
   const htmlSelector = document.documentElement;
 
@@ -26,6 +27,16 @@ const Header = () => {
     }
   }
 
+  const toggleDropdown = (e) => {
+    e.preventDefault();
+
+    if (dropdownNav.current.classList.contains('active')) {
+      dropdownNav.current.classList.remove('active');
+    } else {
+      dropdownNav.current.classList.add('active');
+    }
+  }
+
   return (
     <header>
       <div className="se-pre-con"></div>
@@ -42,8 +53,8 @@ const Header = () => {
           <img className="header__close js-header__close" src={mobileClose} alt="Close" onClick={closeMenu} />
           <ul className="nav">
             <li>
-              <Link to="#" className="nav__item nav__item--dropdown">UK</Link>
-              <ul className="submenu">
+              <Link to="#" className="nav__item nav__item--dropdown" onClick={toggleDropdown}>UK</Link>
+              <ul className="submenu" ref={dropdownNav}>
                 <li>More countries are coming!</li>
               </ul>
             </li>
