@@ -58,8 +58,8 @@ const Header = () => {
                 <li>More countries are coming!</li>
               </ul>
             </li>
-            <li><Link to="/faq">FAQ</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/faq" className="nav__item">FAQ</Link></li>
+            <li><Link to="/contact" className="nav__item">Contact</Link></li>
             <li><Link to="#" className="button button--small">Get the App</Link></li>
           </ul>
         </div>
