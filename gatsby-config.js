@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  target: 'node',
   plugins: [
     'gatsby-plugin-sass',
     {
