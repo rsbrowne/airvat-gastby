@@ -8,22 +8,20 @@ import mobileClose from '../images/mobile-close.svg'
 const Header = () => {
   const mobileNav = React.createRef();
   const dropdownNav = React.createRef();
-  const bodySelector = document.body;
-  const htmlSelector = document.documentElement;
 
   const openMenu = () => {
     if (!mobileNav.current.classList.contains('active')) {
       mobileNav.current.classList.add('active');
-      bodySelector.classList.add('no-scroll');
-      htmlSelector.classList.add('no-scroll');
+      document.body.classList.add('no-scroll');
+      document.documentElement.classList.add('no-scroll');
     }
   }
 
   const closeMenu = () => {
     if (mobileNav.current.classList.contains('active')) {
       mobileNav.current.classList.remove('active');
-      bodySelector.classList.remove('no-scroll');
-      htmlSelector.classList.remove('no-scroll');
+      document.body.classList.remove('no-scroll');
+      document.documentElement.classList.remove('no-scroll');
     }
   }
 
