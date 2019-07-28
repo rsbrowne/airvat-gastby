@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: nahmadic/airvat-gatsby
+  repo: airvat-gastby
 media_folder: static/assets
 public_folder: assets
 collections:
