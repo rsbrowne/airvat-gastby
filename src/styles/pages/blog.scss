@@ -1,0 +1,31 @@
+.section--blog-list {
+  min-height: 75vh;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 15rem;
+  }
+}
+
+.section__inner--blog-list {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+}
+
+.blog-list {
+  width: 100%;
+  max-width: 100rem;
+  display: flex;
+}
+
+.blog-card {
+  width: calc(100%/3);
+  padding: 1.5rem;
+}
+
+.blog-card__inner {
+  background-color: white;
+}
