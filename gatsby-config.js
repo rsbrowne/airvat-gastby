@@ -16,6 +16,14 @@ module.exports = {
           families: ['Averta: n3,n4,n6,n7']
         }
       } 
-    }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/blog/`
+      }
+    },
+    'gatsby-transformer-remark'
   ]
 }
