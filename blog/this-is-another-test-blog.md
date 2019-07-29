@@ -1,7 +1,8 @@
 ---
-path: test-blog-2
-date: 2019-07-29T21:42:38.895Z
 title: This is another test blog
+date: 2019-07-29T21:42:38.895Z
+path: test-blog-2
+bannerImg: /assets/istock-468881510.jpg
 ---
 This test blog has an image!
 
