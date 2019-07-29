@@ -19,12 +19,19 @@ const BlogPage = () => {
     }
   `);
 
-  console.log(data);
-
   return (
     <Layout>
       <h1>Blog Page</h1>
-      <p>Post will show up here later</p>
+      <ul>
+        {data.allMarkdownRemark.edges.map((edge) => {
+          return (
+            <li>
+              <h2>{edge.node.frontmatter.title}</h2>
+              <p>{edge.node.frontmatter.date}</p>
+            </li>
+          )
+        })}
+      </ul>
     </Layout>
   )
 }
