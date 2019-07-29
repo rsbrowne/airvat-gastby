@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: nahmadic/airvat-gastby
-media_folder: static/uploads
+media_folder: static/assets
 public_folder: assets
 collections:
   - name: blog
