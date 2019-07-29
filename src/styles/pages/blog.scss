@@ -3,7 +3,7 @@
 
   h1 {
     text-align: center;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -19,13 +19,41 @@
   width: 100%;
   max-width: 100rem;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .blog-card {
   width: calc(100%/3);
   padding: 1.5rem;
+
+  &:hover {
+    .blog-card__inner {
+      box-shadow: 0 0 12px 0 rgba(0,0,0,0.25);
+    }
+  }
 }
 
 .blog-card__inner {
   background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+}
+
+.blog-card__image {
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog-card__content {
+  min-height: 15rem;
+  padding: 1.5rem;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
 }

@@ -11,7 +11,8 @@ const BlogPage = () => {
           node {
             frontmatter {
               title
-              date
+              date(formatString: "MMMM DD, YYYY")
+              bannerImg
             }
             fields {
               slug
@@ -32,9 +33,15 @@ const BlogPage = () => {
               return (
                 <div className="blog-card">
                   <div className="blog-card__inner">
-                    <Link to={`/blog/${edge.node.fields.slug}`}>
-                      <h2>{edge.node.frontmatter.title}</h2>
-                      <p>{edge.node.frontmatter.date}</p>
+                    <Link to={`/blog/${edge.node.fields.slug}`} style={{ textDecoration: 'none' }}>
+                      <div 
+                        className="blog-card__image" 
+                        style={{backgroundImage: `url(${edge.node.frontmatter.bannerImg})`}}
+                      ></div>
+                      <div className="blog-card__content">
+                        <h3>{edge.node.frontmatter.title}</h3>
+                        <p>{edge.node.frontmatter.date}</p>
+                      </div>
                     </Link>
                   </div>
                 </div>
