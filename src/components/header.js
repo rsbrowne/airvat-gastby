@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'gatsby'
 
 import logo from '../images/airvat-logo.svg'
@@ -8,6 +8,7 @@ import mobileClose from '../images/mobile-close.svg'
 const Header = () => {
   const mobileNav = React.createRef();
   const dropdownNav = React.createRef();
+  const dropdownContainer = React.createRef();
 
   const openMenu = () => {
     if (!mobileNav.current.classList.contains('active')) {
@@ -25,7 +26,7 @@ const Header = () => {
     }
   }
 
-  const toggleDropdown = (e) => {
+  const toggleDropdown = e => {
     e.preventDefault();
 
     if (dropdownNav.current.classList.contains('active')) {
@@ -34,6 +35,21 @@ const Header = () => {
       dropdownNav.current.classList.add('active');
     }
   }
+
+  const closeDropdown = e => {
+    const clickClassList = e.target.classList;
+    if (!clickClassList.contains('nav__item--dropdown') && !clickClassList.contains('submenu')) {
+      dropdownNav.current.classList.remove('active');
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', closeDropdown);
+
+    return () => {
+      document.removeEventListener('click', closeDropdown);
+    };
+  }, []);
 
   return (
     <header>
@@ -49,7 +65,7 @@ const Header = () => {
         <div className="header__nav" ref={mobileNav}>
           <img className="header__close js-header__close" src={mobileClose} alt="Close" onClick={closeMenu} />
           <ul className="nav">
-            <li>
+            <li ref={dropdownContainer}>
               <Link to="/" className="nav__item nav__item--dropdown" onClick={toggleDropdown}>UK</Link>
               <ul className="submenu" ref={dropdownNav}>
                 <li>More countries are coming!</li>
