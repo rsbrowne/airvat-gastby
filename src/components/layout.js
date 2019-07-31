@@ -27,7 +27,7 @@ const Layout = (props) => {
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <title>Shop tax free | AIRVAT</title>
         <meta name="description" content="Download the app to get more tax back! Shop at any UK store and we will do the boring paperwork for you!" />
-        <link rel="canonical" href="http://www.airvat.co.uk" />
+        <link rel="canonical" href="https://www.airvat.co.uk" />
         <meta name="robots" content="noindex, nofollow" />
 
         <style type="text/css">{`
