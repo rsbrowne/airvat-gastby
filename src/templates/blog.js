@@ -19,7 +19,7 @@ export const query = graphql`
 const Blog = (props) => {
   return (
     <Layout>
-      <div className="section section--blog-page">
+      <div className="section section--banner section--blog-page">
         <div className="section__inner section__inner--blog-page">
           <div 
             className="banner__image" 
