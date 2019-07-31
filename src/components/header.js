@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import logo from '../images/airvat-logo.svg'
 import mobileBar from '../images/mobile-bar.svg'
 import mobileClose from '../images/mobile-close.svg'
+import appStoreBadge from '../images/app-store-badge.svg'
+import googleStoreBadge from '../images/google-play-badge.svg'
 
 const Header = () => {
   const mobileNav = React.createRef();
@@ -74,7 +76,13 @@ const Header = () => {
             <li><Link to="/faq" className="nav__item">FAQ</Link></li>
             <li><Link to="/contact" className="nav__item">Contact</Link></li>
             <li><Link to="/blog" className="nav__item">Blog</Link></li>
-            <li><a href="#footer-links" className="button button--small">Get the App</a></li>
+            <li>
+              <a href="#footer-links" className="button button--small button--header">Get the App</a>
+              <div className="header-badges">
+                <a href="/" className="store-link"><img src={appStoreBadge} alt="Download from the App Store"/></a>
+                <a href="/" className="store-link"><img src={googleStoreBadge} alt="Download from the Google Play Store"/></a>
+              </div>
+            </li>
           </ul>
         </div>
       </div>

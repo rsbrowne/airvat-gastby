@@ -184,3 +184,18 @@
     }
   }
 }
+
+.button--header {
+  @media #{$breakpoint-medium-small} {
+    display: none !important;
+  }
+}
+
+.header-badges {
+  display: none;
+
+  @media #{$breakpoint-medium-small} {
+    display: flex;
+    flex-direction: column;
+  }
+}
