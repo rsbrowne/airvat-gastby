@@ -10,13 +10,13 @@ import '../styles/main.scss'
 
 const Layout = (props) => {
 
-  useEffect(() => {
-    const pageLoader = document.querySelector('.se-pre-con');
-    // Animate loader off screen
-    setTimeout(() => {
-      pageLoader.classList.add('loaded');
-    }, 1000);
-  });
+  // useEffect(() => {
+  //   const pageLoader = document.querySelector('.se-pre-con');
+  //   // Animate loader off screen
+  //   setTimeout(() => {
+  //     pageLoader.classList.add('loaded');
+  //   }, 1000);
+  // });
 
   return (
     <React.Fragment>
@@ -47,7 +47,7 @@ const Layout = (props) => {
         </style>
       </Helmet>
       <Header></Header>
-      <div className="se-pre-con"></div>
+      {/* <div className="se-pre-con"></div> */}
       {props.children}
       <Footer></Footer>
     </React.Fragment>
