@@ -13,6 +13,10 @@
   align-items: center;
   padding-top: 15rem;
   padding-bottom: 10rem;
+
+  @media #{$breakpoint-small} {
+    padding-top: 2rem;
+  }
 }
 
 .blog-list {

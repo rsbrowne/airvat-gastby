@@ -46,6 +46,8 @@ const Header = () => {
   };
 
   useEffect(() => {
+    document.body.classList.remove('no-scroll');
+    document.documentElement.classList.remove('no-scroll');
     document.addEventListener('click', closeDropdown);
 
     return () => {
