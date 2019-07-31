@@ -37,7 +37,6 @@ const Header = () => {
 
   return (
     <header>
-      <div className="se-pre-con"></div>
       <div className="header">
         <div className="header__logo">
           <Link to="/">
