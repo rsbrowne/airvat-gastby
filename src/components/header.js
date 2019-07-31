@@ -59,7 +59,7 @@ const Header = () => {
             <li><Link to="/faq" className="nav__item">FAQ</Link></li>
             <li><Link to="/contact" className="nav__item">Contact</Link></li>
             <li><Link to="/blog" className="nav__item">Blog</Link></li>
-            <li><Link to="#" className="button button--small">Get the App</Link></li>
+            <li><Link to="#footer-links" className="button button--small">Get the App</Link></li>
           </ul>
         </div>
       </div>

@@ -20,7 +20,7 @@ const IndexPage = () => {
         <div className="section__inner">
           <div className="section__half section__half--left">
             <h1>Tax Free Shopping on your mobile</h1>
-            <Link to="#" className="button">Get the App</Link>
+            <Link to="#footer-links" className="button">Get the App</Link>
           </div>
           <div className="section__half section__half--right">
             <img className="image--desktop" src={bannerPhones} alt="Airvat Phone Demo" />
@@ -40,7 +40,7 @@ const IndexPage = () => {
               <div className="introduction__point">
                 <img src={taxIconMobile} alt="Tax" className="mobile-icon" />
                 <h3>Get more tax back</h3>
-                <p className="large">In-store tax refund companies charge you up to 50% in comissions, fees, and exchange rates. We charge you much less, so you get more tax back!</p>
+                <p className="large">In-store tax refund companies charge you up to 50% in commissions, fees, and exchange rates. We charge you much less, so you get more tax back!</p>
               </div>
               <div className="introduction__point">
                 <img src={shopIconMobile} alt="Tax" className="mobile-icon" />
