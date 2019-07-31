@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="footer__button">
           <h2>Download the App now</h2>
           <div className="footer__links" id="footer-links">
-            <a href="#" className="store-link"><img src={appStoreBadge} alt="Download from the App Store"/></a>
-            <a href="#" className="store-link"><img src={googleStoreBadge} alt="Download from the Google Play Store"/></a>
+            <a href="/" className="store-link"><img src={appStoreBadge} alt="Download from the App Store"/></a>
+            <a href="/" className="store-link"><img src={googleStoreBadge} alt="Download from the Google Play Store"/></a>
           </div>
         </div>
         <div className="bottom__content">

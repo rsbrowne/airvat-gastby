@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import TestimonialSlider from '../components/homepage-carousel'
@@ -20,7 +19,7 @@ const IndexPage = () => {
         <div className="section__inner">
           <div className="section__half section__half--left">
             <h1>Tax Free Shopping on your mobile</h1>
-            <Link to="#footer-links" className="button">Get the App</Link>
+            <a href="#footer-links" className="button">Get the App</a>
           </div>
           <div className="section__half section__half--right">
             <img className="image--desktop" src={bannerPhones} alt="Airvat Phone Demo" />
