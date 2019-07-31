@@ -73,3 +73,34 @@
     font-size: 1.4rem;
   }
 }
+
+.section--blog-page {
+  padding: 5rem 0 10rem;
+}
+
+.section__inner--blog-page {
+  max-width: 100rem;
+}
+
+.banner__image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50rem;
+}
+
+.section__inner--blog-content {
+  max-width: 100rem;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.blog__title {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.blog__content {
+  width: 100%;
+}

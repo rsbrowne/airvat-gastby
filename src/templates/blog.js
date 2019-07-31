@@ -7,8 +7,9 @@ export const query = graphql`
   query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
+        bannerImg
         title
-        date
+        date(formatString: "MMMM DD, YYYY")
       }
       html
     }
@@ -18,9 +19,23 @@ export const query = graphql`
 const Blog = (props) => {
   return (
     <Layout>
-      <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-      <p>{props.data.markdownRemark.frontmatter.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
+      <div className="section section--blog-page">
+        <div className="section__inner section__inner--blog-page">
+          <div 
+            className="banner__image" 
+            style={{backgroundImage: `url(${props.data.markdownRemark.frontmatter.bannerImg})`}}
+          ></div>
+        </div>
+        <div className="section__inner section__inner--blog-content">
+          <div className="blog__title">
+            <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+            <p>{props.data.markdownRemark.frontmatter.date}</p>
+          </div>
+          <div className="blog__content">
+            <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }
