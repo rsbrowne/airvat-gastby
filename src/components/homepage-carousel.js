@@ -29,7 +29,7 @@ class HomepageSlider extends Component {
 
     const settings = {
       centerMode: true,
-      centerPadding: '0',
+      centerPadding: 0,
       infinite: true,
       slidesToShow: 5,
       arrows: false,
