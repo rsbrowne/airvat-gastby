@@ -3,9 +3,10 @@
   font-weight: 300;	
   font-style: normal;	
   font-display: swap; /* Read next point */	
-  unicode-range: U+000-5FF; /* Download only latin glyphs */	
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
   src: local("Averta Light"),	
-  url("/static/fonts/Averta-Light.woff") format("woff");	
+  url("/fonts/Averta-Light.WOFF") format("woff"),
+  url("/fonts/Averta-Light.ttf") format("truetype");
 }	
 
  @font-face {	
@@ -15,7 +16,8 @@
   font-display: swap; /* Read next point */	
   unicode-range: U+000-5FF; /* Download only latin glyphs */	
   src: local("Averta Regular"),	
-  url("/static/fonts/Averta-Regular.woff") format("woff");	
+  url("/fonts/Averta-Regular.WOFF") format("woff"),
+  url("/fonts/Averta-Regular.ttf") format("truetype");	
 }	
 
  @font-face {	
@@ -25,7 +27,8 @@
   font-display: swap; /* Read next point */	
   unicode-range: U+000-5FF; /* Download only latin glyphs */	
   src: local("Averta Semibold"),	
-  url("/static/fonts/Averta-Semibold.WOFF") format("woff");	
+  url("/fonts/Averta-Semibold.WOFF") format("woff"),
+  url("/fonts/Averta-Semibold.ttf") format("truetype");	
 }	
 
  @font-face {	
@@ -35,5 +38,6 @@
   font-display: swap; /* Read next point */	
   unicode-range: U+000-5FF; /* Download only latin glyphs */	
   src: local("Averta Bold"),	
-  url("/static/fonts/Averta-Bold.woff") format("woff");	
+  url("/fonts/Averta-Bold.WOFF") format("woff"),
+  url("/fonts/Averta-Bold.ttf") format("truetype");
 } 
