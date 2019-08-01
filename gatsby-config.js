@@ -14,6 +14,9 @@ module.exports = {
       options: {
         custom: {
           families: ['Averta: n3,n4,n6,n7']
+        },
+        google: {
+          families: ['Poppins: n3,n4,n6,n7']
         }
       }
     },
