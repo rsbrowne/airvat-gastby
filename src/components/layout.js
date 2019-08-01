@@ -15,7 +15,7 @@ const Layout = (props) => {
     // Animate loader off screen
     setTimeout(() => {
       pageLoader.classList.add('loaded');
-    }, 600);
+    }, 1000);
   });
 
   return (

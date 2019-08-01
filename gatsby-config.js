@@ -12,10 +12,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        google: {
-          families: ['Poppins: n3,n4,n6,n7']
+        custom: {
+          families: ['Averta: n3,n4,n6,n7']
         }
-      } 
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
