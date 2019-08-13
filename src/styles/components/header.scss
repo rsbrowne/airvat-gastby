@@ -118,11 +118,12 @@
 
   &:before {
     content: "";
-    background: url("../images/css_sprites.png") -112px -104px;
-    width: 30px;
+    background-image: url("../images/uk-flag.svg");
+    background-size: cover;
+    width: 33px;
     height: 20px;
     position: absolute;
-    left: -40px;
+    left: -42px;
     top: 50%;
     transform: translateY(-50%);
   }
