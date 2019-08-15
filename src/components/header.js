@@ -81,8 +81,8 @@ const Header = () => {
             <li>
               <a href="#footer-links" className="button button--small button--header">Get the App</a>
               <div className="header-badges">
-                <a href="/" className="store-link"><img src={appStoreBadge} alt="Download from the App Store"/></a>
-                <a href="/" className="store-link"><img src={googleStoreBadge} alt="Download from the Google Play Store"/></a>
+                <a href="https://apps.apple.com/us/app/airvat-tax-refund/id1470497953" className="store-link"><img src={appStoreBadge} alt="Download from the App Store"/></a>
+                <a href="https://play.google.com/store/apps/details?id=com.airvat" className="store-link"><img src={googleStoreBadge} alt="Download from the Google Play Store"/></a>
               </div>
             </li>
           </ul>
