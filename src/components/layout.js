@@ -28,7 +28,6 @@ const Layout = (props) => {
         <title>Shop tax free | AIRVAT</title>
         <meta name="description" content="Download the app to get more tax back! Shop at any UK store and we will do the boring paperwork for you!" />
         <link rel="canonical" href="https://www.airvat.co.uk" />
-        <meta name="robots" content="noindex, nofollow" />
 
         <style type="text/css">{`
           .se-pre-con {
