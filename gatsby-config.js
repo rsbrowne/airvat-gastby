@@ -5,6 +5,11 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Airvat`,
+    siteUrl: `https://www.airvat.com/`,
+    description: `Shop tax free | AIRVAT`,
+  },
   plugins: [
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-sass',
