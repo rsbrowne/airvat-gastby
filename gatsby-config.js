@@ -24,6 +24,8 @@ module.exports = {
         path: `${__dirname}/blog/`
       }
     },
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
+    'gatsby-plugin-favicon',
+    'gatsby-plugin-sitemap'
   ]
 }
