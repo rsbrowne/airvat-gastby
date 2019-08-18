@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import appStoreBadge from '../images/app-store-badge.svg'
 import googleStoreBadge from '../images/google-play-badge.svg'
@@ -11,8 +12,12 @@ const Footer = () => {
         <div className="footer__button">
           <h2>Download the App now</h2>
           <div className="footer__links" id="footer-links">
-            <a href="https://apps.apple.com/us/app/airvat-tax-refund/id1470497953" className="store-link"><img src={appStoreBadge} alt="Download from the App Store"/></a>
-            <a href="https://play.google.com/store/apps/details?id=com.airvat" className="store-link"><img src={googleStoreBadge} alt="Download from the Google Play Store"/></a>
+            <OutboundLink href="https://apps.apple.com/us/app/airvat-tax-refund/id1470497953" className="store-link">
+              <img src={appStoreBadge} alt="Download from the App Store"/>
+            </OutboundLink>
+            <OutboundLink href="https://play.google.com/store/apps/details?id=com.airvat" className="store-link">
+              <img src={googleStoreBadge} alt="Download from the Google Play Store"/>
+            </OutboundLink>
           </div>
         </div>
         <div className="bottom__content">

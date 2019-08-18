@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import logo from '../images/airvat-logo.svg'
 import mobileBar from '../images/mobile-bar.svg'
@@ -81,8 +82,12 @@ const Header = () => {
             <li>
               <a href="#footer-links" className="button button--small button--header">Get the App</a>
               <div className="header-badges">
-                <a href="https://apps.apple.com/us/app/airvat-tax-refund/id1470497953" className="store-link"><img src={appStoreBadge} alt="Download from the App Store"/></a>
-                <a href="https://play.google.com/store/apps/details?id=com.airvat" className="store-link"><img src={googleStoreBadge} alt="Download from the Google Play Store"/></a>
+              <OutboundLink href="https://apps.apple.com/us/app/airvat-tax-refund/id1470497953" className="store-link">
+                <img src={appStoreBadge} alt="Download from the App Store"/>
+              </OutboundLink>
+              <OutboundLink href="https://play.google.com/store/apps/details?id=com.airvat" className="store-link">
+                <img src={googleStoreBadge} alt="Download from the Google Play Store"/>
+              </OutboundLink>
               </div>
             </li>
           </ul>
