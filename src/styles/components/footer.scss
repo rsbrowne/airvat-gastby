@@ -39,6 +39,10 @@ footer {
   &:hover {
     img {
       transform: scale(1.1);
+
+      @media #{$breakpoint-medium} {
+        transform: scale(1);
+      }
     }
   }
 }
