@@ -4,11 +4,19 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const supportedLanguages = [
+  { id: 'en', label: 'English' },
+  { id: 'zh', label: 'Chinese' },
+]
+const defaultLanguage = 'en'
+
 module.exports = {
   siteMetadata: {
     title: `Airvat`,
     siteUrl: `https://www.airvat.com/`,
     description: `Shop tax free | AIRVAT`,
+    defaultLanguage,
+    supportedLanguages,
   },
   plugins: [
     'gatsby-plugin-netlify-cms',
@@ -44,9 +52,9 @@ module.exports = {
         // language JSON resource path
         path: `${__dirname}/src/intl`,
         // supported language
-        languages: [`en`, `ch`],
+        languages: supportedLanguages,
         // language file path
-        defaultLanguage: `en`,
+        defaultLanguage: defaultLanguage,
         redirect: true,
       },
     },

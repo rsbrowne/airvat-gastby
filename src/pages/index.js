@@ -19,7 +19,7 @@ const IndexPage = ({ intl }) => {
       <div className="section section--banner">
         <div className="section__inner">
           <div className="section__half section__half--left">
-            <h1>{intl.formatMessage({id: "title"})}</h1>
+            <h1><FormattedMessage id="title" /></h1>
             <a href="#footer-links" className="button">Get the App</a>
           </div>
           <div className="section__half section__half--right">
