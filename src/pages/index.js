@@ -1,4 +1,5 @@
 import React from 'react'
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
 
 import Layout from '../components/layout'
 import TestimonialSlider from '../components/homepage-carousel'
@@ -12,13 +13,13 @@ import taxIconMobile from '../images/tax-icon-mobile.png'
 import shopIconMobile from '../images/shop-icon-mobile.png'
 import paperworkIconMobile from '../images/paperwork-icon-mobile.png'
 
-const IndexPage = () => {
+const IndexPage = ({ intl }) => {
   return (
     <Layout>
       <div className="section section--banner">
         <div className="section__inner">
           <div className="section__half section__half--left">
-            <h1>Tax Free Shopping on your mobile</h1>
+            <h1>{intl.formatMessage({id: "title"})}</h1>
             <a href="#footer-links" className="button">Get the App</a>
           </div>
           <div className="section__half section__half--right">
@@ -70,4 +71,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default injectIntl(IndexPage)

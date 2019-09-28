@@ -39,29 +39,42 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-i18n',
-      options: {        
-        langKeyDefault: 'en',
-        useLangKeyLayout: false,
-        markdownRemark: {
-          postPage: 'src/templates/blog.js',
-          query: `
-            {
-              allMarkdownRemark {
-                edges {
-                  node {
-                    fields {
-                      slug,
-                      langKey
-                    }
-                  }
-                }
-              }
-            }
-          `
-        }
-      }
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`en`, `ch`],
+        // language file path
+        defaultLanguage: `en`,
+        redirect: true,
+      },
     },
+    // {
+    //   resolve: 'gatsby-plugin-i18n',
+    //   options: {
+    //     langKeyForNull: 'en',
+    //     langKeyDefault: 'en',
+    //     useLangKeyLayout: false,
+    //     // markdownRemark: {
+    //     //   postPage: 'src/templates/blog.js',
+    //     //   query: `
+    //     //     {
+    //     //       allMarkdownRemark {
+    //     //         edges {
+    //     //           node {
+    //     //             fields {
+    //     //               slug,
+    //     //               langKey
+    //     //             }
+    //     //           }
+    //     //         }
+    //     //       }
+    //     //     }
+    //     //   `
+    //     // }
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
