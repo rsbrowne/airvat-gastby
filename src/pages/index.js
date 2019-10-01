@@ -70,4 +70,4 @@ const IndexPage = () => {
   )
 }
 
-export default injectIntl(IndexPage)
+export default IndexPage
