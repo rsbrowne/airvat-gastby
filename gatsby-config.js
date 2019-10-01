@@ -4,10 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const supportedLanguages = [
-  { id: 'en', label: 'English' },
-  { id: 'zh', label: 'Chinese' },
-]
+const supportedLanguages = [`en`, `zh-TW`]
 const defaultLanguage = 'en'
 
 module.exports = {
@@ -58,6 +55,17 @@ module.exports = {
         exclude: ["/preview/**", "/do-not-track/me/too/"],
         // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0
+      },
+    },
+    // i18n
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: supportedLanguages,
+        defaultLanguage,
+        // This prevents gatsby-plugin-intl from auto-redirecting to default language versions
+        redirect: false,
       },
     },
   ]
