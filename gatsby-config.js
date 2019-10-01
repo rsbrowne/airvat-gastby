@@ -47,43 +47,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-intl`,
-      options: {
-        // language JSON resource path
-        path: `${__dirname}/src/intl`,
-        // supported language
-        languages: supportedLanguages,
-        // language file path
-        defaultLanguage: defaultLanguage,
-        redirect: true,
-      },
-    },
-    // {
-    //   resolve: 'gatsby-plugin-i18n',
-    //   options: {
-    //     langKeyForNull: 'en',
-    //     langKeyDefault: 'en',
-    //     useLangKeyLayout: false,
-    //     // markdownRemark: {
-    //     //   postPage: 'src/templates/blog.js',
-    //     //   query: `
-    //     //     {
-    //     //       allMarkdownRemark {
-    //     //         edges {
-    //     //           node {
-    //     //             fields {
-    //     //               slug,
-    //     //               langKey
-    //     //             }
-    //     //           }
-    //     //         }
-    //     //       }
-    //     //     }
-    //     //   `
-    //     // }
-    //   }
-    // },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-141200577-1",
