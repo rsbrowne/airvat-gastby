@@ -1,4 +1,5 @@
 import React from 'react'
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 import Layout from '../components/layout'
 
@@ -22,7 +23,7 @@ const FaqPage = () => {
     <Layout>
       <div className="section section--banner section--faq">
         <div className="section__inner section__inner--faq">
-          <h1>How can we help you?</h1>
+          <h1><FormattedMessage id="faqTitle" /></h1>
           <div className="accordion js-accordion">
             <div className="question" onClick={handleClick}>
               <h3>
@@ -249,4 +250,4 @@ const FaqPage = () => {
   )
 }
 
-export default FaqPage
+export default injectIntl(FaqPage)
