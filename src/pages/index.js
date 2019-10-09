@@ -19,8 +19,8 @@ const IndexPage = () => {
       <div className="section section--banner">
         <div className="section__inner">
           <div className="section__half section__half--left">
-            <h1><FormattedMessage id="title" /></h1>
-            <a href="#footer-links" className="button">Get the App</a>
+            <h1><FormattedMessage id="bannerTitle" /></h1>
+            <a href="#footer-links" className="button"><FormattedMessage id="bannerGetTheApp" /></a>
           </div>
           <div className="section__half section__half--right">
             <img className="image--desktop" src={bannerPhones} alt="Airvat Phone Demo" />
@@ -36,21 +36,21 @@ const IndexPage = () => {
           </div>
           <div className="section__half introduction--right">
             <div className="introduction__content">
-              <h2 className="gradient-bg">We're making tax free shopping better for non-EU residents visiting the UK!</h2>
+              <h2 className="gradient-bg"><FormattedMessage id="firstSectionTitle" /></h2>
               <div className="introduction__point">
                 <img src={taxIconMobile} alt="Tax" className="mobile-icon" />
-                <h3>Get more tax back</h3>
-                <p className="large">In-store tax refund companies charge you up to 50% in commissions, fees, and exchange rates. We charge you much less, so you get more tax back!</p>
+                <h3><FormattedMessage id="firstSectionFirstPointTitle" /></h3>
+                <p className="large"><FormattedMessage id="firstSectionFirstPointBody" /></p>
               </div>
               <div className="introduction__point">
                 <img src={shopIconMobile} alt="Tax" className="mobile-icon" />
-                <h3>Shop at any store</h3>
-                <p className="large">Use our refund app for any physical shop in the UK. Enjoy the same service whether you are in a luxury department store or a small souvenir shop!</p>
+                <h3><FormattedMessage id="firstSectionSecondPointTitle" /></h3>
+                <p className="large"><FormattedMessage id="firstSectionSecondPointBody" /></p>
               </div>
               <div className="introduction__point">
                 <img src={paperworkIconMobile} alt="Tax" className="mobile-icon" />
-                <h3>We do the boring paperwork for you</h3>
-                <p className="large">Forget manually filling in multiple forms from different stores. We put all your receipts together into one tax free form.</p>
+                <h3><FormattedMessage id="firstSectionThirdPointTitle" /></h3>
+                <p className="large"><FormattedMessage id="firstSectionThirdPointBody" /></p>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ const IndexPage = () => {
       </div>
       <div className="section section--testimonials">
         <div className="section__inner">
-          <h2 className="gradient-bg">What our users say</h2>
+          <h2 className="gradient-bg"><FormattedMessage id="testimonialTitle" /></h2>
           <TestimonialSlider></TestimonialSlider>
         </div>
       </div>

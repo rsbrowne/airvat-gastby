@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 import logo from '../images/airvat-logo.svg'
 import mobileBar from '../images/mobile-bar.svg'
@@ -76,11 +77,11 @@ const Header = () => {
                 <li>More countries are coming!</li>
               </ul>
             </li>
-            <li><Link to="/faq" className="nav__item">FAQ</Link></li>
-            <li><Link to="/contact" className="nav__item">Contact</Link></li>
-            <li><Link to="/blog" className="nav__item">Blog</Link></li>
+            <li><Link to="/faq" className="nav__item"><FormattedMessage id="menuFAQ" /></Link></li>
+            <li><Link to="/contact" className="nav__item"><FormattedMessage id="menuContact" /></Link></li>
+            <li><Link to="/blog" className="nav__item"><FormattedMessage id="menuBlog" /></Link></li>
             <li>
-              <a href="#footer-links" className="button button--small button--header">Get the App</a>
+              <a href="#footer-links" className="button button--small button--header"><FormattedMessage id="menuGetTheApp" /></a>
               <div className="header-badges">
               <OutboundLink href="https://apps.apple.com/us/app/airvat-tax-refund/id1470497953" className="store-link">
                 <img src={appStoreBadge} alt="Download from the App Store"/>

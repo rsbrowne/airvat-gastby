@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 import receiptsPhone from '../images/phone-receipts.png'
 import receiptsPhoneMobile from '../images/receipts-mobile.png'
@@ -39,14 +40,14 @@ const FeatureViewer = () => {
     <React.Fragment>
       <div className="section__half features--left">
         <div className="features__content">
-          <h2 className="gradient-bg">It's never been this Easy !</h2>
+          <h2 className="gradient-bg"><FormattedMessage id="secondSectionTitle" /></h2>
           <div className="feature js-feature active" data-feature="receipts" onClick={handleClick}>
             <div className="feature__image">
               <img src={receiptsPhoneMobile} alt="recipts" />
             </div>
             <div className="feature__content">
-              <h3>Upload Receipts</h3>
-              <p className="large">Take pictures of all your shop receipts. We will process them for you into a single tax free form.</p>
+              <h3><FormattedMessage id="secondSectionFirstPointTitle" /></h3>
+              <p className="large"><FormattedMessage id="secondSectionFirstPointBody" /></p>
             </div>
           </div>
           <div className="feature js-feature" data-feature="tax" onClick={handleClick}>
@@ -54,8 +55,8 @@ const FeatureViewer = () => {
               <img src={taxPhoneMobile} alt="tax" />
             </div>
             <div className="feature__content">
-              <h3>Print your tax free form</h3>
-              <p className="large">Finished shopping and ready to fly home? Print your tax free form before going to the airport!</p>
+              <h3><FormattedMessage id="secondSectionSecondPointTitle" /></h3>
+              <p className="large"><FormattedMessage id="secondSectionSecondPointBody" /></p>
             </div>
           </div>
           <div className="feature js-feature" data-feature="form" onClick={handleClick}>
@@ -63,8 +64,8 @@ const FeatureViewer = () => {
               <img src={formPhoneMobile} alt="form" />
             </div>
             <div className="feature__content">
-              <h3>Get your form stamped</h3>
-              <p className="large">Follow the instructions within the app on how to get your form authorised by Customs at the airport.</p>
+              <h3><FormattedMessage id="secondSectionThirdPointTitle" /></h3>
+              <p className="large"><FormattedMessage id="secondSectionThirdPointBody" /></p>
             </div>
           </div>
           <div className="feature js-feature" data-feature="refund" onClick={handleClick}>
@@ -72,8 +73,8 @@ const FeatureViewer = () => {
               <img src={refundPhoneMobile} alt="refund" />
             </div>
             <div className="feature__content">
-              <h3>Get your refund</h3>
-              <p className="large">Select your preferred payment method and we'll send you the money!</p>
+              <h3><FormattedMessage id="secondSectionFourthPointTitle" /></h3>
+              <p className="large"><FormattedMessage id="secondSectionFourthPointBody" /></p>
             </div>
           </div>
         </div>
