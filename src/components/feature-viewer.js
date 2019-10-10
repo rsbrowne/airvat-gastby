@@ -9,6 +9,10 @@ import formPhone from '../images/phone-form.png'
 import formPhoneMobile from '../images/form-mobile.png'
 import refundPhone from '../images/phone-refund.png'
 import refundPhoneMobile from '../images/refund-mobile.png'
+import visaLogo from '../images/visa-logo.svg'
+import mastercardLogo from '../images/mastercard-logo.svg'
+import paypalLogo from '../images/paypal-logo.svg'
+import wechatLogo from '../images/wechat-logo.svg'
 
 const FeatureViewer = () => {
 
@@ -75,6 +79,20 @@ const FeatureViewer = () => {
             <div className="feature__content">
               <h3><FormattedMessage id="secondSectionFourthPointTitle" /></h3>
               <p className="large"><FormattedMessage id="secondSectionFourthPointBody" /></p>
+              <div className="feature__logos">
+                <div className="feature__logo">
+                  <img src={visaLogo} alt="visa" />
+                </div>
+                <div className="feature__logo">
+                  <img src={mastercardLogo} alt="visa" />
+                </div>
+                <div className="feature__logo">
+                  <img src={paypalLogo} alt="visa" />
+                </div>
+                <div className="feature__logo">
+                  <img src={wechatLogo} alt="visa" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

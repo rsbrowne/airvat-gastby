@@ -11,8 +11,6 @@ import googleStoreBadge from '../images/google-play-badge.svg'
 
 const Header = () => {
   const mobileNav = React.createRef();
-  const dropdownNav = React.createRef();
-  const dropdownContainer = React.createRef();
 
   const openMenu = () => {
     if (!mobileNav.current.classList.contains('active')) {
@@ -30,31 +28,9 @@ const Header = () => {
     }
   }
 
-  const toggleDropdown = e => {
-    e.preventDefault();
-
-    if (dropdownNav.current.classList.contains('active')) {
-      dropdownNav.current.classList.remove('active');
-    } else {
-      dropdownNav.current.classList.add('active');
-    }
-  }
-
-  const closeDropdown = e => {
-    const clickClassList = e.target.classList;
-    if (!clickClassList.contains('nav__item--dropdown') && !clickClassList.contains('submenu')) {
-      dropdownNav.current.classList.remove('active');
-    }
-  };
-
   useEffect(() => {
     document.body.classList.remove('no-scroll');
     document.documentElement.classList.remove('no-scroll');
-    document.addEventListener('click', closeDropdown);
-
-    return () => {
-      document.removeEventListener('click', closeDropdown);
-    };
   }, []);
 
   return (

@@ -223,6 +223,11 @@
       opacity: 1;
     }
 
+    .feature__logo img {
+      opacity: 1;
+      filter: grayscale(0);
+    }
+
     &:before {
       position: absolute;
       top: 4px;
@@ -259,6 +264,27 @@
   @media #{$breakpoint-small-medium} {
     width: 65%;
     text-align: left;
+  }
+}
+
+.feature__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.feature__logo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    opacity: 0.3;
+    filter: grayscale(100%);
+    max-width: 100%;
+    max-height: 5rem;
   }
 }
 
