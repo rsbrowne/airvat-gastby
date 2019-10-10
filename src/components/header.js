@@ -71,12 +71,9 @@ const Header = () => {
         <div className="header__nav" ref={mobileNav}>
           <img className="header__close js-header__close" src={mobileClose} alt="Close" onClick={closeMenu} />
           <ul className="nav">
-            <li ref={dropdownContainer}>
-              <Link to="/" className="nav__item nav__item--dropdown" onClick={toggleDropdown}>UK</Link>
-              <ul className="submenu" ref={dropdownNav}>
-                <li>More countries are coming!</li>
-              </ul>
-            </li>
+            <li><Link to="/en" className="nav__item nav__item--lang"><span className="link-flag link-flag--uk"></span> EN</Link></li>
+            <li><Link to="/ru" className="nav__item nav__item--lang"><span className="link-flag link-flag--ru"></span> RU</Link></li>
+            <li><Link to="/zh" className="nav__item nav__item--lang"><span className="link-flag link-flag--ch"></span> 中文</Link></li>
             <li><Link to="/faq" className="nav__item"><FormattedMessage id="menuFAQ" /></Link></li>
             <li><Link to="/contact" className="nav__item"><FormattedMessage id="menuContact" /></Link></li>
             <li><Link to="/blog" className="nav__item"><FormattedMessage id="menuBlog" /></Link></li>

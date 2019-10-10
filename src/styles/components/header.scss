@@ -23,7 +23,7 @@
 .header__nav {
   display: flex;
   align-items: center;
-  width: 52rem;
+  width: 60rem;
   z-index: 5;
 
   @media #{$breakpoint-medium-small} {
@@ -113,31 +113,31 @@
   }
 }
 
-.nav__item--dropdown {
-  position: relative;
+.nav__item--lang {
+  display: flex;
+  align-items: center;
+}
 
-  &:before {
-    content: "";
-    background-image: url("../images/uk-flag.svg");
-    background-size: cover;
-    width: 33px;
-    height: 20px;
-    position: absolute;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+.link-flag {
+  background-size: cover;
+  background-position: center;
+  margin-right: 0.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: block;
+}
 
-  &:after {
-    content: "";
-    background: url("../images/css_sprites.png") -83px -146px;
-    width: 13px;
-    height: 8px;
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+.link-flag--uk {
+  background-image: url("../images/uk-flag.svg");
+}
+
+.link-flag--ru {
+  background-image: url("../images/ru-flag.svg");
+}
+
+.link-flag--ch {
+  background-image: url("../images/ch-flag.svg");
 }
 
 .submenu {
