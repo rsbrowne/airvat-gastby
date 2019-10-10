@@ -285,6 +285,12 @@
     filter: grayscale(100%);
     max-width: 100%;
     max-height: 5rem;
+
+    @media #{$breakpoint-medium-small} {
+      filter: grayscale(0);
+      opacity: 1;
+      max-width: 85%;
+    }
   }
 }
 
