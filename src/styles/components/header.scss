@@ -113,9 +113,21 @@
   }
 }
 
+.flag-text {
+  border-bottom: 2px solid transparent;
+}
+
 .nav__item--lang {
   display: flex;
   align-items: center;
+  
+  &:hover {
+    border-bottom-color: transparent;
+
+    .flag-text {
+      border-bottom-color: $color-primary;
+    }
+  }
 }
 
 .link-flag {
