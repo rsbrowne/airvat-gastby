@@ -271,7 +271,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .feature__logo {
@@ -284,7 +284,7 @@
     opacity: 0.3;
     filter: grayscale(100%);
     max-width: 100%;
-    max-height: 5rem;
+    max-height: 3.3rem;
 
     @media #{$breakpoint-medium-small} {
       filter: grayscale(0);
