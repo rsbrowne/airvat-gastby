@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const supportedLanguages = [`en`, `zh`, `ru`]
+const supportedLanguages = [`en`]
 const defaultLanguage = 'en'
 
 module.exports = {
