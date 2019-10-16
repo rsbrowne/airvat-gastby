@@ -26,8 +26,8 @@ const Layout = (props) => {
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <title>Shop tax free | AIRVAT</title>
-        <meta name="description" content="Download the app to get more tax back! Shop at any UK store and we will do the boring paperwork for you!" />
-        <link rel="canonical" href="https://www.airvat.co.uk" />
+        <meta name="description" content="Download the Tax Free app to get more of your VAT refund back! Shop tax free in any UK store and we will do the boring paperwork for you!" />
+        <link rel="canonical" href="https://www.airvat.com" />
 
         <style type="text/css">{`
           .se-pre-con {
