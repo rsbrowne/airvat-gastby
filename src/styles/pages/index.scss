@@ -294,6 +294,22 @@
   }
 }
 
+.feature__logo--paypal {
+  display: block;
+
+  @media #{$breakpoint-medium-small} {
+    display: none;
+  }
+}
+
+.feature__logo--paypal-mobile {
+  display: none;
+
+  @media #{$breakpoint-medium-small} {
+    display: block;
+  }
+}
+
 .features--right {
   padding-left: 2rem;
 

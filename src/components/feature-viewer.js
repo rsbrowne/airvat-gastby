@@ -11,6 +11,7 @@ import refundPhoneMobile from '../images/refund-mobile.png'
 import visaLogo from '../images/visa-logo.svg'
 import mastercardLogo from '../images/mastercard-logo.svg'
 import paypalLogo from '../images/paypal-logo.svg'
+import paypalLogoMobile from '../images/paypal-logo-mobile.svg'
 import wechatLogo from '../images/wechat-logo.png'
 
 const FeatureViewer = () => {
@@ -83,13 +84,14 @@ const FeatureViewer = () => {
                   <img src={visaLogo} alt="visa" />
                 </div>
                 <div className="feature__logo">
-                  <img src={mastercardLogo} alt="visa" />
+                  <img src={mastercardLogo} alt="mastercard" />
                 </div>
                 <div className="feature__logo">
-                  <img src={paypalLogo} alt="visa" />
+                  <img className="feature__logo--paypal" src={paypalLogo} alt="paypal" />
+                  <img className="feature__logo--paypal-mobile" src={paypalLogoMobile} alt="paypal" />
                 </div>
                 <div className="feature__logo">
-                  <img src={wechatLogo} alt="visa" />
+                  <img src={wechatLogo} alt="wechatpay" />
                 </div>
               </div>
             </div>
