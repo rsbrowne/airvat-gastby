@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import { FormattedMessage } from "gatsby-plugin-intl"
 
 import appStoreBadge from '../images/app-store-badge.svg'
 import googleStoreBadge from '../images/google-play-badge.svg'
@@ -11,7 +10,7 @@ const Footer = () => {
     <footer>
       <div className="footer__inner">
         <div className="footer__button">
-          <h2><FormattedMessage id="footerText" /></h2>
+          <h2>Download the App now</h2>
           <div className="footer__links" id="footer-links">
             <OutboundLink href="https://apps.apple.com/us/app/airvat-tax-refund/id1470497953" className="store-link">
               <img src={appStoreBadge} alt="Download from the App Store"/>

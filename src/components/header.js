@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 import logo from '../images/airvat-logo.svg'
 import mobileBar from '../images/mobile-bar.svg'
@@ -50,11 +49,11 @@ const Header = () => {
             <li><Link to="/en" className="nav__item nav__item--lang"><span className="link-flag link-flag--uk"></span> EN</Link></li>
             <li><Link to="/ru" className="nav__item nav__item--lang"><span className="link-flag link-flag--ru"></span> RU</Link></li>
             <li><Link to="/zh" className="nav__item nav__item--lang"><span className="link-flag link-flag--ch"></span> 中文</Link></li>
-            <li><FormattedMessage id="menuFAQLink">{link => <a href={link} className="nav__item"><FormattedMessage id="menuFAQ" /></a>}</FormattedMessage></li>
-            <li><FormattedMessage id="menuContactLink">{link => <a href={link} className="nav__item"><FormattedMessage id="menuContact" /></a>}</FormattedMessage></li>
-            <li><FormattedMessage id="menuBlogLink">{link => <a href={link} className="nav__item"><FormattedMessage id="menuBlog" /></a>}</FormattedMessage></li>
+            <li><Link to="/faq" className="nav__item">FAQ</Link></li>
+            <li><Link to="/contact" className="nav__item">Contact</Link></li>
+            <li><Link to="/blog" className="nav__item">Blog</Link></li>
             <li>
-              <a href="#footer-links" className="button button--small button--header"><FormattedMessage id="menuGetTheApp" /></a>
+              <a href="#footer-links" className="button button--small button--header">Get the App</a>
               <div className="header-badges">
               <OutboundLink href="https://apps.apple.com/us/app/airvat-tax-refund/id1470497953" className="store-link">
                 <img src={appStoreBadge} alt="Download from the App Store"/>

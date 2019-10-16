@@ -1,5 +1,4 @@
 import React from 'react'
-import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 import Layout from '../components/layout'
 
@@ -11,7 +10,7 @@ const ContactPage = () => {
     <Layout>
       <div className="section section--banner section--contact">
         <div className="section__inner section__inner--contact">
-          <h1><FormattedMessage id="contactTitle" /></h1>
+          <h1>Contact Us</h1>
           <div className="contact__links">
             <div className="contact__link contact__link--email">
               <img src={mailIcon} alt="Email Us" />
@@ -28,4 +27,4 @@ const ContactPage = () => {
   )
 }
 
-export default injectIntl(ContactPage)
+export default ContactPage

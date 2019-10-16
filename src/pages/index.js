@@ -1,5 +1,4 @@
 import React from 'react'
-import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 import Layout from '../components/layout'
 import TestimonialSlider from '../components/homepage-carousel'
@@ -19,8 +18,8 @@ const IndexPage = () => {
       <div className="section section--banner">
         <div className="section__inner">
           <div className="section__half section__half--left">
-            <h1><FormattedMessage id="bannerTitle" /></h1>
-            <a href="#footer-links" className="button"><FormattedMessage id="bannerGetTheApp" /></a>
+            <h1>Tax Free Shopping on your mobile</h1>
+            <a href="#footer-links" className="button">Get the App</a>
           </div>
           <div className="section__half section__half--right">
             <img className="image--desktop" src={bannerPhones} alt="Airvat Phone Demo" />
@@ -36,21 +35,21 @@ const IndexPage = () => {
           </div>
           <div className="section__half introduction--right">
             <div className="introduction__content">
-              <h2 className="gradient-bg"><FormattedMessage id="firstSectionTitle" /></h2>
+              <h2 className="gradient-bg">We're making tax free shopping better for non-EU residents visiting the UK!</h2>
               <div className="introduction__point">
                 <img src={taxIconMobile} alt="Tax" className="mobile-icon" />
-                <h3><FormattedMessage id="firstSectionFirstPointTitle" /></h3>
-                <p className="large"><FormattedMessage id="firstSectionFirstPointBody" /></p>
+                <h3>GET MORE TAX BACK</h3>
+                <p className="large">In-store tax refund companies charge you up to 50% in commissions, fees, and exchange rates. We charge you much less, so you get more tax back!</p>
               </div>
               <div className="introduction__point">
                 <img src={shopIconMobile} alt="Tax" className="mobile-icon" />
-                <h3><FormattedMessage id="firstSectionSecondPointTitle" /></h3>
-                <p className="large"><FormattedMessage id="firstSectionSecondPointBody" /></p>
+                <h3>SHOP AT ANY STORE</h3>
+                <p className="large">Use our refund app for any physical shop in the UK. Enjoy the same service whether you are in a luxury department store or a small souvenir shop!</p>
               </div>
               <div className="introduction__point">
                 <img src={paperworkIconMobile} alt="Tax" className="mobile-icon" />
-                <h3><FormattedMessage id="firstSectionThirdPointTitle" /></h3>
-                <p className="large"><FormattedMessage id="firstSectionThirdPointBody" /></p>
+                <h3>WE DO THE BORING PAPERWORK FOR YOU</h3>
+                <p className="large">Forget manually filling in multiple forms from different stores. We put all your receipts together into one tax free form.</p>
               </div>
             </div>
           </div>
@@ -63,7 +62,7 @@ const IndexPage = () => {
       </div>
       <div className="section section--testimonials">
         <div className="section__inner">
-          <h2 className="gradient-bg"><FormattedMessage id="testimonialTitle" /></h2>
+          <h2 className="gradient-bg">What our users say</h2>
           <TestimonialSlider></TestimonialSlider>
         </div>
       </div>
@@ -71,4 +70,4 @@ const IndexPage = () => {
   )
 }
 
-export default injectIntl(IndexPage)
+export default IndexPage
