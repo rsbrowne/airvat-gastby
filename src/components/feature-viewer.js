@@ -11,7 +11,7 @@ import refundPhoneMobile from '../images/refund-mobile.png'
 import visaLogo from '../images/visa-logo.svg'
 import mastercardLogo from '../images/mastercard-logo.svg'
 import paypalLogo from '../images/paypal-logo.svg'
-import wechatLogo from '../images/wechat-logo.svg'
+import wechatLogo from '../images/wechat-logo.png'
 
 const FeatureViewer = () => {
 
