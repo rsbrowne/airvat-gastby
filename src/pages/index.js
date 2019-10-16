@@ -35,21 +35,21 @@ const IndexPage = () => {
           </div>
           <div className="section__half introduction--right">
             <div className="introduction__content">
-              <h2 className="gradient-bg">We're making tax free shopping better for non-EU residents visiting the UK!</h2>
+              <h2 className="gradient-bg">Cheaper and easier tax free shopping in the UK!</h2>
               <div className="introduction__point">
                 <img src={taxIconMobile} alt="Tax" className="mobile-icon" />
-                <h3>GET MORE TAX BACK</h3>
-                <p className="large">In-store tax refund companies charge you up to 50% in commissions, fees, and exchange rates. We charge you much less, so you get more tax back!</p>
+                <h3>GET MORE VAT REFUND BACK</h3>
+                <p className="large">In-store tax refund companies charge you up to 50% in commissions, fees, and exchange rates. We charge you much less, so your tax free shopping is even cheaper!</p>
               </div>
               <div className="introduction__point">
                 <img src={shopIconMobile} alt="Tax" className="mobile-icon" />
-                <h3>SHOP AT ANY STORE</h3>
-                <p className="large">Use our refund app for any physical shop in the UK. Enjoy the same service whether you are in a luxury department store or a small souvenir shop!</p>
+                <h3>SHOP TAX FREE IN ANY STORE</h3>
+                <p className="large">Use our VAT refund app for any shop in the UK. Enjoy the same tax free service whether you are in a luxury department store or a small souvenir shop!</p>
               </div>
               <div className="introduction__point">
                 <img src={paperworkIconMobile} alt="Tax" className="mobile-icon" />
-                <h3>WE DO THE BORING PAPERWORK FOR YOU</h3>
-                <p className="large">Forget manually filling in multiple forms from different stores. We put all your receipts together into one tax free form.</p>
+                <h3>WE DO THE BORING VAT REFUND PAPERWORK FOR YOU</h3>
+                <p className="large">Forget manually filling in multiple tax free forms from different stores. We put all your receipts together into one tax free form.</p>
               </div>
             </div>
           </div>

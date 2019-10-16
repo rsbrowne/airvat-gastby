@@ -43,7 +43,7 @@ const FeatureViewer = () => {
     <React.Fragment>
       <div className="section__half features--left">
         <div className="features__content">
-          <h2 className="gradient-bg">It's never been this Easy !</h2>
+          <h2 className="gradient-bg">Tax Free has never been this Easy !</h2>
           <div className="feature js-feature active" data-feature="receipts" onClick={handleClick}>
             <div className="feature__image">
               <img src={receiptsPhoneMobile} alt="recipts" />
@@ -67,7 +67,7 @@ const FeatureViewer = () => {
               <img src={formPhoneMobile} alt="form" />
             </div>
             <div className="feature__content">
-              <h3>GET YOUR FORM STAMPED</h3>
+              <h3>GET YOUR TAX FREE FORM STAMPED</h3>
               <p className="large">Follow the instructions within the app on how to get your form authorised by Customs at the airport.</p>
             </div>
           </div>
@@ -76,8 +76,8 @@ const FeatureViewer = () => {
               <img src={refundPhoneMobile} alt="refund" />
             </div>
             <div className="feature__content">
-              <h3>GET YOUR REFUND</h3>
-              <p className="large">Select your preferred payment method and we'll send you the money!</p>
+              <h3>GET YOUR VAT REFUND</h3>
+              <p className="large">Select your preferred payment method and receive your VAT!</p>
               <div className="feature__logos">
                 <div className="feature__logo">
                   <img src={visaLogo} alt="visa" />
