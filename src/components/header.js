@@ -47,8 +47,8 @@ const Header = () => {
           <img className="header__close js-header__close" src={mobileClose} alt="Close" onClick={closeMenu} />
           <ul className="nav">
             <li><Link to="/" className="nav__item nav__item--lang"><span className="link-flag link-flag--uk"></span> <span className="flag-text">EN</span></Link></li>
-            <li><Link to="https://airvat-ru.netlify.com/" className="nav__item nav__item--lang"><span className="link-flag link-flag--ru"></span> <span className="flag-text">RU</span></Link></li>
-            <li><Link to="https://airvat-ch.netlify.com/" className="nav__item nav__item--lang"><span className="link-flag link-flag--ch"></span> <span className="flag-text">中文</span></Link></li>
+            <li><OutboundLink href="https://airvat-ru.netlify.com/" className="nav__item nav__item--lang"><span className="link-flag link-flag--ru"></span> <span className="flag-text">RU</span></OutboundLink></li>
+            <li><OutboundLink href="https://airvat-ch.netlify.com/" className="nav__item nav__item--lang"><span className="link-flag link-flag--ch"></span> <span className="flag-text">中文</span></OutboundLink></li>
             <li><Link to="/faq" className="nav__item">FAQ</Link></li>
             <li><Link to="/contact" className="nav__item">Contact</Link></li>
             <li><Link to="/blog" className="nav__item">Blog</Link></li>
